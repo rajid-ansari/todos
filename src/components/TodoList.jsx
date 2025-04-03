@@ -29,7 +29,7 @@ const TodoList = () => {
                           <ul>
                               <li
                                   className="text-lg"
-                                  style={{textDecoration:todo.completed && "line-through"}}
+                                  style={{textDecoration:todo.completed && "line-through", color:todo.completed && "gray"}}
                               >
                                   {" "}
                                   {todo.content}{" "}

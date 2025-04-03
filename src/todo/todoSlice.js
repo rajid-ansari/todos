@@ -21,7 +21,7 @@ export const todoSlice = createSlice({
             const id = action.payload;
             const index = state.todos.findIndex((todo) => id === todo._id);
 
-            if(index !== -1) {
+            if (index !== -1) {
                 state.todos.splice(index, 1);
                 localStorage.setItem("todos", JSON.stringify(state.todos));
             }
@@ -32,11 +32,11 @@ export const todoSlice = createSlice({
             const index = state.todos.findIndex((todo) => id === todo._id);
             const todo = state.todos[index];
 
-            if(todo) {
+            if (todo) {
                 todo.completed = !todo.completed;
                 localStorage.setItem("todos", JSON.stringify(state.todos));
             }
-        }
+        },
     },
 });
 

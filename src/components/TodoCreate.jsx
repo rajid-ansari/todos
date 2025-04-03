@@ -32,9 +32,9 @@ const TodoCreate = () => {
 		<input
 		value={todo}
 		onChange={(e) => setTodo(e.target.value)}
-		className='py-2 px-4 w-[47vw] rounded-lg outline-none bg-gray-100'
-		type="text" placeholder='Enter your todo' required />
-		<button className='py-2 px-4 bg-[#5A4BAD] rounded-xl'
+		className='py-2 px-4 w-[47vw] rounded-lg outline-none bg-gray-100 font-[Test_Founders_Grotesk]'
+		type="search" placeholder='Enter your todo' required />
+		<button className='py-2 px-4 bg-[#6048e8] rounded-xl text-white font-semibold'
 		onClick={handleTodoCreation}
 		>Create</button>
 	</div>
